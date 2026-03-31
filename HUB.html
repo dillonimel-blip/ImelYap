@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<div class="terminal">
+    <p><span class="prompt">></span> <span id="typed-text"></span><span class="cursor">█</span></p>
+</div>
+<head>
+    <title>HUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+const text = "Accessing system... Welcome to the SAPIEN hub. Here you will find a compilation of related works as well as well as links to socials.";
+const speed = 50;
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+window.onload = typeWriter;
+</script>
+
+<div class="crt-flicker"></div>
+<div class="static-overlay"></div>
+<div class="dither-overlay"></div>
+<div class="crt-flicker"></div>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="HUB.html" class="active">HUB</a></li>
+        <li><a href="TERMINAL.html">TERMINAL</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+        <div class="social-container"> 
+  <a href="https://www.instagram.com/dill0n_im3l/" target="_blank" class="social-btn">[ INSTAGRAM ]</a>
+  <a href="https://linkedin.com" target="_blank" class="social-btn">[ LINKEDIN ]</a>
+</div>
+    <h1>Hello</h1> 
+    <p>...</p> 
+</div>
+
+<div class="image-container">
+    <img src="*pics\RWpanel1.jpg" alt="Retro Image">
+</div>
+
+<div class="image-container">
+    <img src="*pics\RWpanel2.jpg" alt="Retro Image">
+</div>
+
+<div class="image-container">
+   <img src="*pics\RWpanel3.jpg" alt="Retro Image">
+</div>
+
+    <div class="video-container">
+    <video controls>
+        <h3 class="video-label">> system_capture.mp4</h3>
+        <source src="*pics\SAPIEN_TRAILER_1_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div class="video-container">
+    <video controls>
+        <h3 class="video-label">> system_capture.mp4</h3>
+        <source src="*pics\MotherWillowCrudex (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+<div class="image-container">
+    <img src="*pics\_Cricket_Scribe.jpg" alt="Retro Image">
+</div>
+
+<div class="image-container">
+    <img src="*pics\*Shrike.jpg" alt="Retro Image">
+</div>
+
+</body>
+</html>
